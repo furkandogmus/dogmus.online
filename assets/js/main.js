@@ -27,3 +27,16 @@
     if (toggle) toggle.textContent = theme === "dark" ? "☀️" : "🌙";
   }
 })();
+
+// Proje slider — kesintisiz döngü için kartları çoğalt
+(function () {
+  const track = document.querySelector(".project-track");
+  if (!track) return;
+  const cards = Array.from(track.children);
+  cards.forEach(function (card) {
+    const clone = card.cloneNode(true);
+    clone.setAttribute("aria-hidden", "true");
+    clone.tabIndex = -1;
+    track.appendChild(clone);
+  });
+})();
