@@ -2,15 +2,15 @@
 // ve posts/ klasöründe ilgili HTML dosyasını oluştur.
 window.POSTS = [
   {
-    title: "Bu Bloga Nasıl Yazı Eklerim?",
+    title: "Küçük Bir Başlangıç",
     date: "5 Haziran 2026",
-    url: "/posts/yazi-ekleme.html",
-    excerpt: "Yeni bir blog yazısı eklemek için izlemen gereken basit adımlar.",
+    url: "/posts/kucuk-bir-baslangic.html",
+    excerpt: "Büyük planları beklemeden, küçük ve temiz bir adımla yola çıkmak üzerine.",
   },
   {
-    title: "Merhaba Dünya",
-    date: "1 Haziran 2026",
-    url: "/posts/merhaba-dunya.html",
-    excerpt: "Bu blogu neden açtım ve burada neler paylaşacağım.",
+    title: "Kodun Sakin Tarafı",
+    date: "4 Haziran 2026",
+    url: "/posts/kodun-sakin-tarafi.html",
+    excerpt: "Yazılımın sadece hızdan değil, sabırdan ve sade düşünmekten de beslendiğine dair.",
   },
 ];

@@ -41,8 +41,10 @@ body {
 }
 .header-inner {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  gap: 10px 16px;
   padding-top: 18px;
   padding-bottom: 18px;
 }
@@ -54,8 +56,10 @@ body {
 }
 .nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 18px;
+  justify-content: flex-end;
+  gap: 14px;
 }
 .nav a {
   text-decoration: none;
@@ -150,6 +154,31 @@ body {
 .prose a { color: var(--link); }
 .prose ul, .prose ol { padding-left: 22px; }
 .prose li { margin-bottom: 6px; }
+.compact-list {
+  margin-top: -6px;
+}
+.cv-actions {
+  margin: 28px 0 34px;
+}
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--fg);
+  border-radius: 6px;
+  color: var(--bg);
+  background: var(--fg);
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+.prose .button-link {
+  color: var(--bg);
+}
+.button-link:hover {
+  opacity: 0.84;
+}
 .prose pre {
   background: var(--border);
   padding: 14px 16px;
