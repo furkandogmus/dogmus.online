@@ -1,0 +1,9 @@
+# Netlify yapılandırması — statik site, build adımı yok
+[build]
+  publish = "."
+
+# Bulunamayan sayfalar için ana sayfaya yönlendir (yumuşak 404)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404

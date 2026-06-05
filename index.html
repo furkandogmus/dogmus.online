@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Furkan Doğmuş — Blog</title>
+  <meta name="description" content="Furkan Doğmuş'un kişisel blogu. Yazılım, teknoloji ve düşünceler." />
+  <meta property="og:title" content="Furkan Doğmuş — Blog" />
+  <meta property="og:description" content="Yazılım, teknoloji ve düşünceler üzerine kişisel blog." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✍️</text></svg>" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand">Furkan Doğmuş</a>
+      <nav class="nav">
+        <a href="/">Ana Sayfa</a>
+        <a href="/about.html">Hakkımda</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Temayı değiştir">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Merhaba, ben Furkan 👋</h1>
+      <p class="lead">
+        Yazılım, teknoloji ve öğrendiklerim üzerine düşüncelerimi
+        burada paylaşıyorum. Hoş geldin!
+      </p>
+    </section>
+
+    <section class="posts">
+      <h2>Son Yazılar</h2>
+      <ul class="post-list" id="post-list"><!-- JS ile doldurulur --></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Furkan Doğmuş · Netlify ile yayınlandı.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/posts.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script>
+    // Ana sayfada yazı listesini oluştur
+    (function () {
+      const list = document.getElementById("post-list");
+      if (!list || !window.POSTS) return;
+      window.POSTS.forEach((post) => {
+        const li = document.createElement("li");
+        li.className = "post-item";
+        li.innerHTML = `
+          <a href="${post.url}" class="post-link">
+            <span class="post-date">${post.date}</span>
+            <span class="post-title">${post.title}</span>
+            <span class="post-excerpt">${post.excerpt}</span>
+          </a>`;
+        list.appendChild(li);
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bu Bloga Nasıl Yazı Eklerim? — Furkan Doğmuş</title>
+  <meta name="description" content="Yeni bir blog yazısı eklemek için izlemen gereken basit adımlar." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✍️</text></svg>" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand">Furkan Doğmuş</a>
+      <nav class="nav">
+        <a href="/">Ana Sayfa</a>
+        <a href="/about.html">Hakkımda</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Temayı değiştir">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="prose">
+      <h1>Bu Bloga Nasıl Yazı Eklerim?</h1>
+      <p class="post-meta">5 Haziran 2026</p>
+
+      <p>Yeni bir yazı eklemek iki basit adımdan oluşuyor:</p>
+
+      <h2>1. Yazı dosyasını oluştur</h2>
+      <p>
+        <code>posts/</code> klasöründeki mevcut bir HTML dosyasını
+        kopyala, yeni bir isim ver (örneğin <code>posts/yeni-yazi.html</code>)
+        ve içindeki başlık, tarih ve metni güncelle.
+      </p>
+
+      <h2>2. Listeye ekle</h2>
+      <p>
+        <code>assets/js/posts.js</code> dosyasını aç ve listenin en
+        başına yeni yazının bilgilerini ekle:
+      </p>
+      <pre><code>{
+  title: "Yeni Yazının Başlığı",
+  date: "10 Haziran 2026",
+  url: "/posts/yeni-yazi.html",
+  excerpt: "Kısa bir özet.",
+},</code></pre>
+
+      <p>
+        Hepsi bu kadar. Değişiklikleri Netlify'a gönderdiğinde
+        (sürükle-bırak ya da git push) yazı otomatik olarak ana
+        sayfada listelenir.
+      </p>
+
+      <a href="/" class="back-link">← Tüm yazılar</a>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Furkan Doğmuş · Netlify ile yayınlandı.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
