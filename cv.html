@@ -22,18 +22,131 @@
   </header>
 
   <main class="container cv-container">
-    <article class="prose cv-page">
-      <h1>CV</h1>
-      <p class="page-lead">
-        Güncel CV'yi bu sayfadan ayrılmadan inceleyebilirsin.
-      </p>
+    <section class="cv-hero-panel">
+      <div>
+        <p class="eyebrow">Cloud / DevOps / Backend</p>
+        <h1>Furkan Doğmuş</h1>
+        <p>
+          Cloud-native altyapı, CI/CD otomasyonu, monitoring, merkezi
+          loglama ve backup / disaster recovery senaryoları üzerine
+          çalışan yazılım geliştirici.
+        </p>
+        <div class="cv-actions">
+          <a class="action-link action-primary" href="mailto:furkandogmus9183@gmail.com">E-posta</a>
+          <a class="action-link action-secondary" href="https://github.com/furkandogmus" target="_blank" rel="noopener">GitHub</a>
+          <a class="action-link action-secondary" href="/assets/files/furkan-dogmus-cv.pdf" download>PDF İndir</a>
+        </div>
+      </div>
+      <dl class="cv-stats" aria-label="CV özeti">
+        <div>
+          <dt>2 yıl</dt>
+          <dd>BTS Group'ta DevOps / Backend deneyimi</dd>
+        </div>
+        <div>
+          <dt>Hacettepe</dt>
+          <dd>Bilgisayar Mühendisliği</dd>
+        </div>
+        <div>
+          <dt>Ankara</dt>
+          <dd>Cloud-native ve platform mühendisliği odağı</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="resume-layout" aria-label="CV detayları">
+      <aside class="resume-sidebar">
+        <section>
+          <h2>Teknik Odak</h2>
+          <ul class="skill-cloud">
+            <li>Docker</li>
+            <li>Kubernetes</li>
+            <li>GitLab CI/CD</li>
+            <li>Helm</li>
+            <li>Prometheus</li>
+            <li>Grafana</li>
+            <li>ELK Stack</li>
+            <li>PostgreSQL</li>
+            <li>Redis</li>
+            <li>Ceph</li>
+            <li>libvirt/KVM</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Diller</h2>
+          <ul class="plain-list">
+            <li>Go</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Bash</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>İletişim</h2>
+          <ul class="plain-list">
+            <li><a href="mailto:furkandogmus9183@gmail.com">furkandogmus9183@gmail.com</a></li>
+            <li><a href="https://github.com/furkandogmus" target="_blank" rel="noopener">github.com/furkandogmus</a></li>
+          </ul>
+        </section>
+      </aside>
+
+      <div class="resume-main">
+        <section class="resume-section">
+          <h2>Deneyim</h2>
+          <article class="timeline-item">
+            <div class="timeline-meta">Mayıs 2024 - Mayıs 2026 · ODTU Teknokent, Ankara</div>
+            <h3>BTS Group · DevOps / Backend Engineer Intern</h3>
+            <ul>
+              <li>NetBackup ve Commvault ile enterprise backup ve disaster recovery entegrasyonları geliştirdim.</li>
+              <li>Full VM recovery, cross-host restoration, single-disk recovery ve backup image üzerinden VM provisioning akışları üzerinde çalıştım.</li>
+              <li>GitLab CI ile RPM paket üretimi ve yayınlama süreçlerini otomatikleştirerek deployment operasyonlarını hızlandırdım.</li>
+              <li>Prometheus, Grafana, ELK Stack ve Filebeat ile monitoring ve merkezi loglama altyapıları kurdum.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="resume-section">
+          <h2>Projeler</h2>
+          <div class="resume-projects">
+            <a href="https://botforge.bagajpark.com" target="_blank" rel="noopener">
+              <span>BotForge</span>
+              Çok kiracılı, doküman tabanlı RAG chatbot platformu.
+            </a>
+            <a href="https://bagajpark.com" target="_blank" rel="noopener">
+              <span>BagajPark</span>
+              QR takip, ödeme entegrasyonu ve rol tabanlı yetkilendirme içeren bagaj saklama pazaryeri.
+            </a>
+            <a href="https://github.com/furkandogmus/kuberag" target="_blank" rel="noopener">
+              <span>KubeRAG</span>
+              Declarative ingestion, embedding ve vector indexing akışları için Kubernetes-native operator.
+            </a>
+          </div>
+        </section>
+
+        <section class="resume-section">
+          <h2>Eğitim</h2>
+          <article class="timeline-item">
+            <div class="timeline-meta">Eylül 2021 - Ocak 2026 · Ankara</div>
+            <h3>Hacettepe Üniversitesi · Bilgisayar Mühendisliği</h3>
+          </article>
+        </section>
+      </div>
+    </section>
+
+    <section class="pdf-section" aria-label="Orijinal PDF">
+      <div class="section-heading">
+        <p class="eyebrow">Belge</p>
+        <h2>Orijinal PDF</h2>
+      </div>
       <div class="cv-embed">
         <iframe
           src="/assets/files/furkan-dogmus-cv.pdf"
           title="Furkan Doğmuş CV"
         ></iframe>
       </div>
-    </article>
+    </section>
   </main>
 
   <footer class="site-footer">
