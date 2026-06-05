@@ -24,19 +24,71 @@
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Furkan Doğmuş</h1>
-      <p class="lead">
-        Yazılım, üretim ve öğrenme üzerine kısa notlar. Bazen bir
-        fikri, bazen bir projeyi, bazen de yol üstünde öğrendiğim
-        küçük bir şeyi burada bırakıyorum.
-      </p>
+  <main>
+    <section class="home-hero">
+      <div class="container hero-content">
+        <p class="eyebrow">DevOps / Backend / Cloud-native</p>
+        <h1>Selamünaleyküm, ben Furkan Doğmuş.</h1>
+        <p class="lead">
+          Sanallaştırma platformları, backup ve disaster recovery
+          senaryoları, monitoring sistemleri ve otomasyonlar üzerine
+          çalışan bir yazılımcıyım.
+        </p>
+        <div class="hero-actions" aria-label="Kısa bağlantılar">
+          <a class="action-link action-primary" href="/about.html">Hakkımda</a>
+          <a class="action-link action-secondary" href="/cv.html">CV</a>
+        </div>
+        <dl class="hero-facts" aria-label="Kısa özet">
+          <div>
+            <dt>2 yıl</dt>
+            <dd>BTS Group deneyimi</dd>
+          </div>
+          <div>
+            <dt>Hacettepe</dt>
+            <dd>Bilgisayar Mühendisliği</dd>
+          </div>
+          <div>
+            <dt>Platform</dt>
+            <dd>DevOps, Kubernetes, monitoring</dd>
+          </div>
+        </dl>
+      </div>
     </section>
 
-    <section class="posts">
-      <h2>Notlar</h2>
-      <ul class="post-list" id="post-list"><!-- JS ile doldurulur --></ul>
+    <section class="home-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Üzerinde çalıştıklarım</p>
+          <h2>Projeler</h2>
+        </div>
+        <div class="project-grid">
+          <a class="project-card" href="https://botforge.bagajpark.com" target="_blank" rel="noopener">
+            <span class="project-kicker">RAG Chatbot Platformu</span>
+            <strong>BotForge</strong>
+            <span>Doküman tabanlı, çok kiracılı chatbot platformu.</span>
+          </a>
+          <a class="project-card" href="https://bagajpark.com" target="_blank" rel="noopener">
+            <span class="project-kicker">Marketplace</span>
+            <strong>BagajPark</strong>
+            <span>QR takip ve ödeme entegrasyonu içeren bagaj saklama pazaryeri.</span>
+          </a>
+          <a class="project-card" href="https://github.com/furkandogmus/kuberag" target="_blank" rel="noopener">
+            <span class="project-kicker">Kubernetes Operator</span>
+            <strong>KubeRAG</strong>
+            <span>RAG ingestion, embedding ve vector indexing akışları için operator.</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section posts-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Defterden</p>
+          <h2>Notlar</h2>
+        </div>
+        <ul class="post-list" id="post-list"><!-- JS ile doldurulur --></ul>
+      </div>
     </section>
   </main>
 
