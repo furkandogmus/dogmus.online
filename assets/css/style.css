@@ -139,7 +139,7 @@ a { color: inherit; }
 
 html[data-theme="dark"] .home-hero {
   background-image:
-    linear-gradient(90deg, rgba(31, 44, 36, 0.94), rgba(31, 44, 36, 0.8) 44%, rgba(31, 44, 36, 0.36)),
+    linear-gradient(90deg, rgba(31, 44, 36, 0.64), rgba(31, 44, 36, 0.5) 44%, rgba(31, 44, 36, 0.16)),
     url("/assets/images/meadow-workshop.png");
   color: var(--fg);
 }
@@ -653,7 +653,7 @@ html[data-theme="dark"] .home-hero .lead {
 
   html[data-theme="dark"] .home-hero {
     background-image:
-      linear-gradient(180deg, rgba(31, 44, 36, 0.94), rgba(31, 44, 36, 0.78) 58%, rgba(31, 44, 36, 0.3)),
+      linear-gradient(180deg, rgba(31, 44, 36, 0.66), rgba(31, 44, 36, 0.48) 58%, rgba(31, 44, 36, 0.12)),
       url("/assets/images/meadow-workshop.png");
   }
 
