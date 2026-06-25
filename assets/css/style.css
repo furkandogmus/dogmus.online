@@ -189,6 +189,18 @@ html[data-theme="dark"] .home-hero {
   width: 54px;
 }
 
+html[data-theme="light"] .moon-shape {
+  display: none;
+}
+
+html[data-theme="dark"] .sun-shape {
+  display: none;
+}
+
+html[data-theme="dark"] .moon-shape {
+  display: block;
+}
+
 @keyframes sky-arrive {
   from {
     opacity: 0;
