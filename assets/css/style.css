@@ -152,6 +152,23 @@ html[data-theme="dark"] .home-hero {
   z-index: 2;
 }
 
+.hero-webgl {
+  display: block;
+  height: 100%;
+  inset: 0;
+  mix-blend-mode: soft-light;
+  opacity: 0.72;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+html[data-theme="dark"] .hero-webgl {
+  mix-blend-mode: screen;
+  opacity: 0.42;
+}
+
 .sky-scene {
   inset: 0;
   pointer-events: none;
@@ -735,6 +752,10 @@ html[data-theme="dark"] .home-hero .lead {
     padding: 48px 0 34px;
   }
 
+  .hero-webgl {
+    opacity: 0.5;
+  }
+
   html[data-theme="dark"] .home-hero {
     background-image:
       linear-gradient(180deg, rgba(31, 44, 36, 0.66), rgba(31, 44, 36, 0.48) 58%, rgba(31, 44, 36, 0.12)),
@@ -839,9 +860,14 @@ html[data-theme="dark"] .home-hero .lead {
 @media (prefers-reduced-motion: reduce) {
   .project-track,
   .sun-shape,
-  .moon-shape {
+  .moon-shape,
+  .hero-webgl {
     animation: none;
     opacity: 1;
     transform: none;
+  }
+
+  .hero-webgl {
+    display: none;
   }
 }
